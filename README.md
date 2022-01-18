@@ -66,24 +66,25 @@ so that reservations are accurate and current.
 ## Features
 
 - Create a new reservation including the following info:
-    - first name
-    - last name
-    - mobile number
-    - date of reservation
-    - time of reservation
-    - number of people in the party
+    - First Name
+    - Last Name
+    - Mobile Number
+    - Date of reservation
+    - Time of reservation
+    - Number of people in the party
 - Only allows reservations to be created during business hours:
     - No reservations on closed days
     - No reservations made for dates or times in the past.
     - No reservations made earlier than opening time, or later than 60 min before closing.
 - Seat reservations at a specific table:
-    - cannot seat reservations at tables with a seating capacity less than the party size.
+    - Cannot seat reservations at tables with a seating capacity less than the party size.
+    - Cannot seat reservations at tables that are already occupied.
 - A clear view of which tables are occupied and which are free on the dashboard
-- Free up a previously occupied table when guests leave
 - A clear view of which reservations are booked (and waiting to be seated) and which are currently seated.
-- reservations with a status of "finished" are removed from the dashboard
+- Reservations with a status of "finished" are removed from the dashboard
 - Search for reservations by partial or complete phone number
-- modify existing reservations if a customer calls to change or cancel their reservation
+- Modify existing reservations if a customer calls to change or cancel their reservation
+- Free up a previously occupied table when guests leave
 
 
 ## Screenshots
@@ -150,7 +151,8 @@ Start the server in development mode
 ## Running Tests
 
 This project has unit, integration, and end-to-end (e2e) tests. 
-*End-to-end tests use browser automation to interact with the application just like the user does.* 
+
+* *End-to-end tests use browser automation to interact with the application just like the user does.* 
 
 Once the tests are passing for a given user story, you have implemented the necessary functionality.
 
@@ -177,12 +179,13 @@ You can run **all** the tests using the following commands:
 If you would like a reminder of which npm scripts are available, run ```npm run``` to see a list of available commands.
 
 > Note that the logging level for the backend is set to warn when running tests and info otherwise.
->
-> Note: After running npm test, npm run test:X, or npm run test:e2e you might see something like the following in the output: [start:frontend] Assertion failed:. This is not a failure, it is just the frontend project getting shutdown automatically.
 
-> Note: If you are getting a unable to resolve dependency tree error when running the frontend tests, run the following command: npm install --force --prefix front-end. This will allow you to run the frontend tests.
+> Note: After running npm test, npm run test:X, or npm run test:e2e you might see something like the following in the output: [start:frontend] Assertion failed:. This > is not a failure, it is just the frontend project getting shutdown automatically.
 
-> Hint: If you stop the tests before they finish, it can leave the test database in an unusual state causing the tests to fail unexpectedly the next time you run them. If this happens, delete all tables in the test database, including the knex_* tables, and try the tests again.
+> Note: If you are getting a unable to resolve dependency tree error when running the frontend tests, run the following command: npm install --force --prefix front-end.
+> This will allow you to run the frontend tests.
+
+> Hint: If you stop the tests before they finish, it can leave the test database in an unusual state causing the tests to fail unexpectedly the next time you run them. > If this happens, delete all tables in the test database, including the knex_* tables, and try the tests again.
 
 ### Frontend test timeout failure
 Running the frontend tests on a resource constrained computer may result in timeout failures.
@@ -195,6 +198,7 @@ To help you better understand what might be happening during the end-to-end test
 The screenshots are saved in ```front-end/.screenshots``` and you can review them after running the end-to-end tests.
 
 You can use the screenshots to debug your code by rendering additional information on the screen.
+
 ## Project Requirements and Acceptance Criteria
 
 ### US-01 Create and list reservations
