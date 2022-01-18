@@ -1,6 +1,21 @@
 const dateFormat = /\d\d\d\d-\d\d-\d\d/;
 const timeFormat = /\d\d:\d\d/;
 
+const MONTHS = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 /**
  * Formats a Date object as YYYY-MM-DD.
  *
@@ -57,7 +72,7 @@ export function today() {
  *  the date one day prior to currentDate, formatted as YYYY-MM-DD
  */
 export function previous(currentDate) {
-  let [ year, month, day ] = currentDate.split("-");
+  let [year, month, day] = currentDate.split("-");
   month -= 1;
   const date = new Date(year, month, day);
   date.setMonth(date.getMonth());
@@ -73,10 +88,84 @@ export function previous(currentDate) {
  *  the date one day after currentDate, formatted as YYYY-MM-DD
  */
 export function next(currentDate) {
-  let [ year, month, day ] = currentDate.split("-");
+  let [year, month, day] = currentDate.split("-");
   month -= 1;
   const date = new Date(year, month, day);
   date.setMonth(date.getMonth());
   date.setDate(date.getDate() + 1);
   return asDateString(date);
+}
+
+/**
+ *
+ * @param {object} dateAndTimeObject
+ * Must contain properties reservation_date string as "YYYY-MM-DD"
+ * and reservation_time string as 24HR "HH-MM"
+ * @returns {Date} Date representing those values
+ */
+export function getDateFromReso(dateAndTimeObject) {
+  const { reservation_date, reservation_time } = dateAndTimeObject;
+  if (reservation_date && reservation_time) {
+    const year = reservation_date.substring(0, 4);
+    const month = reservation_date.substring(5, 7);
+    const day = reservation_date.substring(8, 10);
+    const hour = reservation_time.substring(0, 2);
+    const minutes = reservation_time.substring(3, 5);
+
+    const date = new Date(year, month - 1, day, hour, minutes);
+    return date;
+  }
+  return undefined;
+}
+
+/**
+ *
+ * @param {string} dateString
+ * date string in YYYY-MM-DD format (ISO-8601 format is also valid)
+ * @returns {string}
+ * String formatted as "Month Day, YYYY"
+ * Ex: "May 1, 2000"
+ */
+export function formatDateAsMDY(dateString) {
+  const year = dateString.slice(0, 4);
+  const month = MONTHS[parseInt(dateString.slice(5, 7)) - 1];
+  const date = parseInt(dateString.slice(8, 10));
+  return `${month} ${date}, ${year}`;
+}
+
+/**
+ *
+ * @param {string} dateString
+ * date string in YYYY-MM-DD format (ISO-8601 format is also valid)
+ * @returns {string}
+ * String formatted as "Month Day, YYYY"
+ * Ex: "May 1, 2000"
+ */
+export function isTuesday(dateString) {
+  const year = dateString.slice(0, 4);
+  const month = parseInt(dateString.slice(5, 7)) - 1;
+  const dayOfMonth = parseInt(dateString.slice(8, 10));
+  const date = new Date(year, month, dayOfMonth, 0, 0, 0, 0);
+  return date.getDay() === 2;
+}
+
+/**
+ *
+ * @param {string} timeString
+ * time string in 24HR (ie:"23:30")
+ * @returns {string}
+ * String formatted as "H:SS AM/PM"
+ * @example "13:30" = "1:30 PM"
+ */
+export function formatTimeAs12HR(timeString) {
+  let hour = parseInt(timeString.slice(0, 2));
+  const minutes = timeString.slice(3, 5);
+  let isAm = true;
+  if (hour >= 12) isAm = false;
+  if (hour < 1) {
+    hour = 12;
+  } else if (hour >= 13) {
+    hour -= 12;
+  }
+  return `${hour}:${minutes} ${isAm ? "AM" : "PM"}`;
 }

@@ -1,0 +1,4 @@
+/* added ability for ErrorAlert component to show line breaks in error messages */
+.alert.alert-danger {
+  white-space: pre-line;
+}
