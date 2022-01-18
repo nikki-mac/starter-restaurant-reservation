@@ -53,7 +53,7 @@ function hasValidDateForReserving(reservation) {
   if (reso_date > closeTime) {
     return {
       isValid: false,
-      message: `Cannot make reservation after 9:30PM as restaurant closes at 10. Received ${hour}:${minutes}.`,
+      message: `Cannot make reservation after 9:30PM as restaurant closes at 10:30. Received ${hour}:${minutes}.`,
     };
   }
   return { isValid: true, message: "" };

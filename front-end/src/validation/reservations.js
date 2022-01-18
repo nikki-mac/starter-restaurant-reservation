@@ -45,7 +45,7 @@ function getDateAndTimeValidationErrors(reservationInfo) {
   );
   if (reso_date > closeTime) {
     errors.push(
-      "Cannot make reservation after 9:30PM as restaurant closes at 10."
+      "Cannot make reservation after 9:30PM as restaurant closes at 10:30."
     );
   }
 
