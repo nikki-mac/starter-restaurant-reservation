@@ -1,8 +1,8 @@
-# Periodic Tables - Restaurant Reservation Application
+# :hamburger: Periodic Tables - Restaurant Reservation Application
 
-**Final Capstone Project for Thinkful's Software Engineering program.**
+⭐ **Final Capstone Project for Thinkful's Software Engineering program** ⭐
 
-**Project Prompt:** 
+❗ **Project Prompt:** 
 
 You have been hired as a full stack developer at *Periodic Tables*, a startup that is creating a reservation system for fine dining restaurants. The software is used only by restaurant personnel when a customer calls to request a reservation. At this point, the customers will not access the system online.
 
@@ -10,60 +10,61 @@ For this project, you'll need to create a full-stack web app that uses the stack
 
 The Product Manager has already created the user stories for *Periodic Tables*. Each of the user stories is listed below, and your Product Manager wants them to be implemented in the order in which they are listed. Another developer has already written the tests for each of the user stories so that you don't have to.
 
-#### US-01 Create and list reservations
+#### 🍕 US-01 Create and list reservations
 As a restaurant manager
 I want to create a new reservation when a customer calls
 so that I know how many customers will arrive at the restaurant on a given day.
 
-#### US-02 Create reservation on a future, working date
+#### 🍕 US-02 Create reservation on a future, working date
 As a restaurant manager
 I only want to allow reservations to be created on a day when we are open
 so that users do not accidentally create a reservation for days when we are closed.
 
-#### US-03 Create reservation within eligible timeframe
+#### 🍕 US-03 Create reservation within eligible timeframe
 As a restaurant manager
 I only want to allow reservations to be created during business hours, up to 60 minutes before closing
 so that users do not accidentally create a reservation for a time we cannot accommodate.
 
-#### US-04 Seat reservation
+#### 🍕 US-04 Seat reservation
 As a restaurant manager,
 When a customer with an existing reservation arrives at the restaurant
 I want to seat (assign) their reservation to a specific table
 so that I know which tables are occupied and free.
 
-#### US-05 Finish an occupied table
+#### 🍕 US-05 Finish an occupied table
 As a restaurant manager
 I want to free up an occupied table when the guests leave
 so that I can seat new guests at that table.
 
-#### US-06 Reservation Status
+#### 🍕 US-06 Reservation Status
 As a restaurant manager
 I want a reservation to have a status of either booked, seated, or finished
 so that I can see which reservation parties are seated, and finished reservations are hidden from the dashboard.
 
-#### US-07 Search for a reservation by phone number
+#### 🍕 US-07 Search for a reservation by phone number
 As a restaurant manager
 I want to search for a reservation by phone number **(partial or complete)**
 so that I can quickly access a customer's reservation when they call about their reservation.
 
-#### US-08 Change an existing reservation
+#### 🍕 US-08 Change an existing reservation
 As a restaurant manager
 I want to be able to modify a reservation if a customer calls to change or cancel their reservation
 so that reservations are accurate and current.
-## Demo
+
+## 🌟 Demo
 
 [Click here for live demo]()
 
 *Insert gif or video*
 
-## Tech Stack
+## 💻 Tech Stack
 
 **Client:** JavaScript, React, CSS, Bootstrap
 
 **Server:** Node, Express, Knex, PostgreSQL
 
 
-## Features
+## 🍟 Features
 
 - Create a new reservation including the following info:
     - First Name
@@ -87,11 +88,11 @@ so that reservations are accurate and current.
 - Free up a previously occupied table when guests leave
 
 
-## Screenshots
-### Full Dashboard View
+## 📸 Screenshots
+### 🍔 Full Dashboard View
 ![Full Dashboard View](./assets/App-Screenshots/full-dashboard-view.png "Full Dashboard View: Reservations and Tables")
 
-### Create Reservation
+### 🍔 Create Reservation
 #### Create Reservation Form
 <img src="./assets/App-Screenshots/create-reservation-form.png" alt="Create Reservation Form">
 
@@ -110,7 +111,7 @@ so that reservations are accurate and current.
 #### Cannot Create Reservation with Missing Fields
 <img src="./assets/App-Screenshots/create-reso-missing-field.png" alt="Cannot create a reservation with missing field inputs">
 
-### Create Table
+### 🍔 Create Table
 #### Create Table Form
 <img src="./assets/App-Screenshots/create-table-form.png" alt="Create Table Form">
 
@@ -123,7 +124,7 @@ so that reservations are accurate and current.
 #### New Table Displays on Dashboard
 <img src="./assets/App-Screenshots/created-new-table-dashboard.png" alt="New table displays on dashboard after creation">
 
-### Search
+### 🍔 Search
 #### Search By Full Mobile Number
 <img src="./assets/App-Screenshots/search-full-number.png" alt="Search by full mobile number">
 
@@ -133,7 +134,7 @@ so that reservations are accurate and current.
 #### No Results - Number is Not Included in a Reservation
 <img src="./assets/App-Screenshots/no-results-search.png" alt="No results show if searched number is not included in a reservation">
 
-### Edit Reservation
+### 🍔 Edit Reservation
 #### Edit Reservation Form - Jane Doe
 <img src="./assets/App-Screenshots/edit-jane-doe-form.png" alt="Edit Reservation Form for Jane Doe's reservation">
 
@@ -143,14 +144,14 @@ so that reservations are accurate and current.
 #### AFTER: Jane Doe's Reservation (After Edit)
 <img src="./assets/App-Screenshots/edit-jane-doe-after.png" alt="AFTER: Jane Doe's reservation after editing">
 
-### Cancel a Reservation
+### 🍔 Cancel a Reservation
 #### Cancel Reservation Window Alert
 <img src="./assets/App-Screenshots/cancel-reso-window-alert.png" alt="Cancel Reservation window alert">
 
 #### AFTER: Jane Doe's Reservation is Cancelled
 <img src="./assets/App-Screenshots/post-cancel-jane-doe.png" alt="Jane Doe's reservation is cancelled">
 
-### Seat a Reservation
+### 🍔 Seat a Reservation
 #### Seating Reservation Dropdown Menu
 <img src="./assets/App-Screenshots/NM-seat-dropdown.png" alt="Seating reservation dropdown menu">
 
@@ -163,7 +164,7 @@ so that reservations are accurate and current.
 #### Cannot Seat a Large Party at a Low Capacity Table
 <img src="./assets/App-Screenshots/cannot-seat-large-party-at-low-capacity-table.png" alt="Cannot seat a large party at a low capacity table">
 
-### Finish a Table
+### 🍔 Finish a Table
 #### Finish Table Window Alert - Free the Table Once the Guests Have Left
 <img src="./assets/App-Screenshots/finish-table-window-alert.png" alt="Window alert for finishing a table">
 
@@ -178,7 +179,7 @@ so that reservations are accurate and current.
  
 
 
-## Database Setup
+## 🗃️ Database Setup
 
 For this application, you will need to create a PostgreSQL database.
 A quick and easy way to create a PostgreSQL database is to use [ElephantSQL](https://www.elephantsql.com/).
@@ -191,7 +192,8 @@ Additionally, [DBeaver](https://dbeaver.io/) is a great tool for working with yo
 
 ### Knex
 Run ```npx knex``` commands from within the ```back-end``` folder, which is where the ```knexfile.js``` file is located.
-## Run Locally
+
+## 🖥️ Run Locally
 
 Clone the project
 
@@ -234,7 +236,7 @@ Start the server in development mode
 ```
 
 
-## Running Tests
+## 📈 Running Tests
 
 This project has unit, integration, and end-to-end (e2e) tests. 
 
@@ -285,7 +287,7 @@ The screenshots are saved in ```front-end/.screenshots``` and you can review the
 
 You can use the screenshots to debug your code by rendering additional information on the screen.
 
-## Project Requirements and Acceptance Criteria
+## 📓 Project Requirements and Acceptance Criteria
 
 ### US-01 Create and list reservations
 As a restaurant manager
