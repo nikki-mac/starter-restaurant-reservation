@@ -51,8 +51,8 @@ As a restaurant manager
 I want to be able to modify a reservation if a customer calls to change or cancel their reservation
 so that reservations are accurate and current.
 
-*For full project specs and acceptance criteria, [click here](📓-Project-Requirements-and-Acceptance-Criteria)
-📓
+*For full project specs and acceptance criteria, [click here](#📓-project-requirements-and-acceptance-criteria)*
+
 ## 🌟 Demo
 
 [Click here for live demo]()
