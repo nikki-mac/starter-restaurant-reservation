@@ -168,7 +168,7 @@ so that reservations are accurate and current.
 <img src="./assets/App-Screenshots/finish-table-window-alert.png" alt="Window alert for finishing a table">
 
 #### AFTER: Table Becomes Available
-<img src="./assets/App-Screenshots/full-dashboard-view.png" alt="Table becomes available again after finishing the table">
+<img src="./assets/App-Screenshots/finish-table-after.png" alt="Table becomes available again after finishing the table">
 
 
 
