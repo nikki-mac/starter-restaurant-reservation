@@ -88,8 +88,94 @@ so that reservations are accurate and current.
 
 
 ## Screenshots
+### Full Dashboard View
+![Full Dashboard View](./assets/App-Screenshots/full-dashboard-view.png "Full Dashboard View: Reservations and Tables")
 
-![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
+### Create Reservation
+#### Create Reservation Form
+<img src="./assets/App-Screenshots/create-reservation-form.png" alt="Create Reservation Form">
+
+#### Cannot Create Reservation After Closing
+<img src="./assets/App-Screenshots/cannot-create-reso-after-close.png" alt="Cannot create a reservation after closing time">
+
+#### Cannot Create Reservation Before Open
+<img src="./assets/App-Screenshots/cannot-create-reso-before-open.png" alt="Cannot create a reservation before opening time">
+
+#### Cannot Create Reservation in the Past
+<img src="./assets/App-Screenshots/cannot-create-reso-in-the-past.png" alt="Ccannot create a reservation in the past">
+
+#### Cannot Create Reservation When Restaurant is Closed
+<img src="./assets/App-Screenshots/cannot-create-reso-on-closed-days.png" alt="Cannot create a reservation on closed days">
+
+#### Cannot Create Reservation with Missing Fields
+<img src="./assets/App-Screenshots/create-reso-missing-field.png" alt="Cannot create a reservation with missing field inputs">
+
+### Create Table
+#### Create Table Form
+<img src="./assets/App-Screenshots/create-table-form.png" alt="Create Table Form">
+
+#### Cannot Create Table With 1 Character Name
+<img src="./assets/App-Screenshots/cannot-create-table-with-1-char-name.png" alt="Cannot create a table with 1 character name">
+
+#### Correct Table Creation
+<img src="./assets/App-Screenshots/create-new-table-correct.png" alt="Correct input for create table form">
+
+#### New Table Displays on Dashboard
+<img src="./assets/App-Screenshots/created-new-table-dashboard.png" alt="New table displays on dashboard after creation">
+
+### Search
+#### Search By Full Mobile Number
+<img src="./assets/App-Screenshots/search-full-number.png" alt="Search by full mobile number">
+
+#### Search By Partial Mobile Number
+<img src="./assets/App-Screenshots/search-partial-phone.png" alt="Search by partial mobile number">
+
+#### No Results - Number is Not Included in a Reservation
+<img src="./assets/App-Screenshots/no-results-search.png" alt="No results show if searched number is not included in a reservation">
+
+### Edit Reservation
+#### Edit Reservation Form - Jane Doe
+<img src="./assets/App-Screenshots/edit-jane-doe-form.png" alt="Edit Reservation Form for Jane Doe's reservation">
+
+#### BEFORE: Jane Doe's Reservation
+<img src="./assets/App-Screenshots/edit-jane-doe-before.png" alt="BEFORE: Jane Doe's Reservation">
+
+#### AFTER: Jane Doe's Reservation (After Edit)
+<img src="./assets/App-Screenshots/edit-jane-doe-after.png" alt="AFTER: Jane Doe's reservation after editing">
+
+### Cancel a Reservation
+#### Cancel Reservation Window Alert
+<img src="./assets/App-Screenshots/cancel-reso-window-alert.png" alt="Cancel Reservation window alert">
+
+#### AFTER: Jane Doe's Reservation is Cancelled
+<img src="./assets/App-Screenshots/post-cancel-jane-doe.png" alt="Jane Doe's reservation is cancelled">
+
+### Seat a Reservation
+#### Seating Reservation Dropdown Menu
+<img src="./assets/App-Screenshots/NM-seat-dropdown.png" alt="Seating reservation dropdown menu">
+
+#### AFTER: Selecting Bar #1 for Nicole Macdonald - Party of 1
+<img src="./assets/App-Screenshots/NM-seated-bar1-dashboard.png" alt="Successful seating of a reservation">
+
+#### Cannot Seat a Reservation at an Occupied Table
+<img src="./assets/App-Screenshots/cannot-seat-at-occupied-table.png" alt="Cannot seat a reservation at an occupied table">
+
+#### Cannot Seat a Large Party at a Low Capacity Table
+<img src="./assets/App-Screenshots/cannot-seat-large-party-at-low-capacity-table.png" alt="Cannot seat a large party at a low capacity table">
+
+### Finish a Table
+#### Finish Table Window Alert - Free the Table Once the Guests Have Left
+<img src="./assets/App-Screenshots/finish-table-window-alert.png" alt="Window alert for finishing a table">
+
+#### AFTER: Table Becomes Available
+<img src="./assets/App-Screenshots/full-dashboard-view.png" alt="Table becomes available again after finishing the table">
+
+
+
+
+
+
+ 
 
 
 ## Database Setup
