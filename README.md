@@ -59,9 +59,9 @@ so that reservations are accurate and current.
 
 ## 💻 Tech Stack
 
-**Client:** JavaScript, React, CSS, Bootstrap
+**Frontend:** JavaScript, React, CSS, Bootstrap
 
-**Server:** Node, Express, Knex, PostgreSQL
+**Backend:** Node, Express, Knex, PostgreSQL
 
 
 ## 🍟 Features
