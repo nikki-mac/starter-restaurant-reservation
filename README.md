@@ -63,6 +63,8 @@ so that reservations are accurate and current.
 
 **Backend:** Node, Express, Knex, PostgreSQL
 
+**Deployment:** Vercel
+
 
 ## 🍟 Features
 
