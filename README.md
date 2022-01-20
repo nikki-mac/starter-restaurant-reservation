@@ -53,9 +53,7 @@ so that reservations are accurate and current.
 
 ## 🌟 Demo
 
-[Click here for live demo](https://starter-restaurant-reservation-peach.vercel.app/dashboard)
-
-*Insert gif or video*
+🌟[Click here for live demo](https://starter-restaurant-reservation-peach.vercel.app/dashboard)🌟
 
 ## 💻 Tech Stack
 
